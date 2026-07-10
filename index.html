@@ -162,7 +162,12 @@
       color: var(--black);
       letter-spacing: 1px;
       margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.15;
     }
+    .tip-line { display: block; }
 
     .venmo-btn {
       display: inline-flex;
@@ -378,7 +383,10 @@
 
   <!-- TIP SECTION -->
   <div class="tip-section">
-    <div class="tip-label">Tips Appreciated But Definitely Not Required 💸</div>
+    <div class="tip-label">
+      <span class="tip-line">Tips Appreciated</span>
+      <span class="tip-line">But Definitely Not Required</span>
+    </div>
 
     <a class="venmo-btn" id="venmoLink" href="venmo://paycharge?txn=pay&recipients=Jesse-Gordon-1"
        onclick="handleVenmoClick(event)"
